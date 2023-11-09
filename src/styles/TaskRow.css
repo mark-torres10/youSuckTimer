@@ -1,0 +1,7 @@
+.TaskRow {
+    width: 100%;
+    padding: 10px; /* Adds space between parent and child divs */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: row;
+}
