@@ -1,0 +1,3 @@
+{"task_name": "Research Work", "route_alias": "research_work", "toggl_task_aliases": ["Research Work"], "totalHoursToLog": 100}
+{"task_name": "SWE Development", "route_alias": "swe_development", "toggl_task_aliases": ["Upskilling", "Learning Full Stack"], "totalHoursToLog": 80}
+{"task_name": "Restaurant Work", "route_alias": "restaurant_work", "toggl_task_aliases": ["Restaurant Work"], "totalHoursToLog": 60}

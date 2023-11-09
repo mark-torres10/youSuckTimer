@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { Progress } from "./ui/progress";
 
-export default function TaskProgressBar() {
-  const [progressValue, setProgressValue] = useState(0);
+export default function TaskProgressBar({ totalHoursToLog, totalHoursLogged }) {
 
-  useEffect(() => {
-    axios.get('http://localhost:5000/hours')
-      .then(response => {
-        setProgressValue(response.data.totalHoursRemaining);
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }, []);
+  const progressValue = Math.floor((totalHoursLogged / totalHoursToLog) * 100);
 
   return (
     <div className="w-[80%] flex-4 ml-8 flex items-center">
