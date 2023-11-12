@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "src/backend/*": {
+      "runtime": "vercel-python@0.3",
+      "maxDuration": 10
+    }
+  }
+}
